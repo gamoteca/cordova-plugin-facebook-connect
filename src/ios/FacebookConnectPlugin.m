@@ -931,7 +931,7 @@ void FBMethodSwizzle(Class c, SEL originalSelector) {
 
 + (void)load
 {
-    FBMethodSwizzle([self class], @selector(application:openURL:options:));
+//     FBMethodSwizzle([self class], @selector(application:openURL:options:));
 }
 
 - (BOOL)swizzled_application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
